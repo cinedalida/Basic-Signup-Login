@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="../css/login.css" />
   </head>
   <body>
     <!-- navbar -->
@@ -18,60 +18,64 @@
 
     <!-- Login -->
     <section class="login__section1">
-      <!-- title -->
-      <div class="login__titleSubheading">
-        <div class="login__title">
-          <h1 class="title">Login</h1>
-        </div>
-        <div class="login__subheading">
-          <h1 class="description">
-            Use your Hollowness Account to access premium contents!
-          </h1>
-        </div>
-      </div>
-      <div class="about__login">
-        <div class="login__container" id="loginPage">
-          <form class="login-form" onsubmit="return validateLogin()">
-            <h2 class="form__title">Login</h2>
-            <p class="subtext">Enter your credentials to continue</p>
-
-            <div class="input-form">
-              <input
-                type="text"
-                id="username"
-                placeholder="Username"
-                required
-              />
-              <input
-                type="password"
-                id="password"
-                placeholder="Password"
-                required
-              />
-              <div class="forgot__container">
-                <a
-                  href="#"
-                  class="forgot__password"
-                  id="forgot-password"
-                  onclick="forgotPassword()"
-                  >Forgot password?</a
-                >
-              </div>
+      <div class="content__container">
+        <!-- title -->
+        <div class="login__titleSubheading">
+          <div class="login__left">
+            <div class="login__title">
+              <h1 class="title">Login</h1>
             </div>
-            <button type="submit">Log In</button>
-            <p id="login-error-message"></p>
-          </form>
+            <div class="login__subheading">
+              <h1 class="description">
+                Use your Hollowness Account to access premium contents!
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="about__login">
+          <div class="login__container" id="loginPage">
+            <form class="login-form" onsubmit="return validateLogin()">
+              <h2 class="form__title">Login</h2>
+              <p class="subtext">Enter your credentials to continue</p>
+
+              <div class="input-form">
+                <input
+                  type="text"
+                  id="username"
+                  placeholder="Username"
+                  required
+                />
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Password"
+                  required
+                />
+                <div class="forgot__container">
+                  <a
+                    href="#"
+                    class="forgot__password"
+                    id="forgot-password"
+                    onclick="forgotPassword()"
+                    >Forgot password?</a
+                  >
+                </div>
+              </div>
+              <button type="submit">Log In</button>
+              <p id="login-error-message"></p>
+            </form>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <section class="login__section3">
-      <div class="home__footer">
+    <section class="login__section2">
+      <div class="login__footer">
         <p class="subject">Application Development</p>
         <p class="myname">Francine Ysabel B. Dalida</p>
       </div>
     </section>
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>
