@@ -3,36 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Your Hollowness</title>
+    <title>Hollow Knight</title>
     <link rel="stylesheet" href="home.css" />
   </head>
   <body>
-    <div class="home-container">
-      <header>
-        <h1>Welcome!</h1>
-        <p>Embrace the void. Explore the forgotten kingdom.</p>
-      </header>
+    <!-- navbar -->
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-      <!-- navbar -->
-      <nav class="navigation">
-        <ul>
-          <li><a href="#">Explore</a></li>
-          <li><a href="#">Dream Nail</a></li>
-          <li><a href="#">The Abyss</a></li>
-          <li><a href="#">Settings</a></li>
-        </ul>
-      </nav>
+    <!-- Home -->
+    <section class="home__section1">
+      <!-- title -->
+      <div class="home__titleSubheading">
+        <div class="home__subheading">
+          <h1 class="description">Welcome to</h1>
+        </div>
+        <div class="home__title">
+          <h1 class="title">Hollow Knight Gallery</h1>
+        </div>
+      </div>
+      <div class="home__buttons">
+        <button type="button">About</button>
+        <button type="button">Contact</button>
+      </div>
+    </section>
 
-      <section class="intro">
-        <h2>Your Journey Awaits...</h2>
-        <p>
-          Beneath the fading town of Dirtmouth, ancient ruins and mysteries call
-          out to the brave.
-        </p>
-        <button class="start-btn">Begin Descent</button>
-      </section>
-    </div>
+    <!-- Home Gallery -->
+    <section class="home__section2">
+      <div class="home__gallery">
+        <img src="pic1.png" alt="pic1" />
+        <img src="pic2.png" alt="pic2" />
+        <img src="pic3.png" alt="pic3" />
+        <img src="pic4.png" alt="pic4" />
+        <img src="pic5.png" alt="pic5" />
+        <img src="pic6.png" alt="pic6" />
+      </div>
+    </section>
 
-    <script src="home.js"></script>
+    <!-- Footer -->
+    <section class="home__section3">
+      <div class="home__footer">
+        <p class="subject">Application Development</p>
+        <p class="myname">Francine Ysabel B. Dalida</p>
+      </div>
+    </section>
   </body>
 </html>
