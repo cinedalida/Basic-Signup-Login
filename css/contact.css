@@ -18,6 +18,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* navbar */
@@ -30,6 +40,16 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000;
+  animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 nav ul {
@@ -43,6 +63,7 @@ nav ul li a {
   color: #7ea9bf;
   text-decoration: none;
   font-weight: 200;
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
