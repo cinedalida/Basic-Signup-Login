@@ -16,6 +16,16 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Navbar */
@@ -28,6 +38,16 @@ nav {
   top: 0;
   z-index: 1000;
   flex-wrap: wrap;
+  animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 nav ul {
@@ -41,6 +61,7 @@ nav ul li a {
   color: #7ea9bf;
   text-decoration: none;
   font-weight: 200;
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -63,6 +84,7 @@ button {
 
 button:hover {
   background-color: #131414;
+  transform: scale(1.05); /* Slight scale on hover */
 }
 
 input {
