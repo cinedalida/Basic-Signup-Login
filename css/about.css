@@ -18,6 +18,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* navbar */
@@ -30,6 +40,16 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000;
+  animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 nav ul {
@@ -43,6 +63,7 @@ nav ul li a {
   color: #7ea9bf;
   text-decoration: none;
   font-weight: 200;
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -76,7 +97,6 @@ nav ul li a:hover {
   margin-top: -150px;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  /* border: solid 1px red; */
 }
 
 .about__title {
@@ -121,17 +141,22 @@ button {
   margin: 10px;
   border-radius: 20px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: fadeInUp 0.8s ease-out 1s forwards;
 }
 
 button:hover {
   background-color: #131414;
+  transform: scale(1.05);
 }
 
-/* Section 2: Game Overview */
+/* Section 2 n 3: Game Overview, Genre */
 .about__gameOverview,
 .about__genre {
   color: rgb(255, 255, 255);
   margin-top: -50rem;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease-out 1s forwards; /* Added animation */
 }
 
 .title__gameOverview,
@@ -139,12 +164,64 @@ button:hover {
   font-weight: 500;
   font-size: 3rem;
   margin-bottom: 3rem;
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: slideInLeft 0.8s ease-out 1.2s forwards; /* Added animation */
 }
 
 .description__gameOverview,
 .description__genre {
   font-weight: 100;
   font-size: 2rem;
+  line-height: 1.6;
+  opacity: 0;
+  transform: translateX(30px);
+  animation: slideInRight 0.8s ease-out 1.4s forwards; /* Added animation */
+  margin-bottom: 2rem; /* Added some bottom margin */
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomInAbout {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .about__image img {
@@ -162,9 +239,7 @@ button:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Section 3: Genre */
-
-/* Footer */
+/* Section 4: Footer */
 
 .about__section4 {
   background-color: #00060c;
