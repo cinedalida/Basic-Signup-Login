@@ -18,6 +18,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* navbar */
@@ -30,6 +40,16 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000;
+  animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 nav ul {
@@ -43,6 +63,7 @@ nav ul li a {
   color: #7ea9bf;
   text-decoration: none;
   font-weight: 200;
+  transition: color 0.3s ease; /* Smooth hover transition */
 }
 
 nav ul li a:hover {
@@ -120,10 +141,12 @@ button {
   margin: 10px;
   border-radius: 20px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
 }
 
 button:hover {
   background-color: #131414;
+  transform: scale(1.05);
 }
 
 /* Section 2: Gallery */
@@ -131,7 +154,7 @@ button:hover {
 /* grid pictures */
 
 .home__gallery {
-  margin-top: -300px;
+  margin-top: -10rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
@@ -146,6 +169,7 @@ button:hover {
   background-color: #0a0a0a;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  animation: slideUp 0.5s ease-out;
 }
 
 .home__gallery img:hover {
@@ -159,6 +183,16 @@ button:hover {
   background-color: #00060c;
   height: 4rem;
   width: 100%;
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .home__footer {
