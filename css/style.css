@@ -20,6 +20,16 @@ body {
   height: 100vh;
   background: url("../assets/HK2.gif") no-repeat center center fixed;
   background-size: cover;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 button {
@@ -33,10 +43,12 @@ button {
   margin: 10px;
   border-radius: 20px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out; /* Smooth transitions */
 }
 
 button:hover {
   background-color: #131414;
+  transform: scale(1.05); /* Slightly scale */
 }
 
 input {
@@ -48,6 +60,12 @@ input {
   border-radius: 10px;
   margin: 10px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #609ea7;
+  box-shadow: 2px 2px 6px rgba(96, 158, 167, 0.7);
 }
 
 a {
@@ -57,6 +75,7 @@ a {
   margin-top: 10px;
   font-style: italic;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 a:hover {
@@ -163,4 +182,23 @@ a:hover {
 }
 .forgot__password:hover {
   text-decoration: underline;
+}
+
+#login-error-message {
+  color: #c23232;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  font-style: italic;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
