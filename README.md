@@ -9,7 +9,7 @@ Hollow Knight Theme Signup/Login (no database)
 
 The login functionality is currently set up with a **hardcoded** user for demonstration purposes. To successfully log in, please use the following credentials:
 
-Username: testUser
+Username: testUser <br />
 Password: Strong1
 
 **Signup:**
@@ -21,11 +21,11 @@ The signup page includes client-side validation to ensure that users enter a use
 
 ## Frontend Features
 
-**Responsive Design:** The layout adapts fluidly to different screen sizes
-**Subtle Animations:** Gentle animations are integrated to provide visual feedback and enhance interactivity.
-These may include:
-_ Smooth transitions when switching between login and signup forms.
-_ Subtle hover effects on buttons and input fields.
+- **Responsive Design:** The layout adapts fluidly to different screen sizes<br />
+- **Subtle Animations:** Gentle animations are integrated to provide visual feedback and enhance interactivity.<br />
+  These may include:<br />
+- Smooth transitions when switching between login and signup forms.<br />
+- Subtle hover effects on buttons and input fields.
 
 ## Documentation:
 
