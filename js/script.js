@@ -15,7 +15,7 @@ function validateLogin() {
   let password = document.getElementById("password").value;
   let errorMessage = document.getElementById("login-error-message");
 
-  if (username === "erika" && password === "kyle") {
+  if (username === "testUser" && password === "Strong1") {
     alert("Login Successful");
     window.location.href = "home.html";
     return false;
@@ -57,10 +57,5 @@ function validateSignup() {
 }
 
 function forgotPassword() {
-  alert("Password recovery coming soon");
-}
-
-function yie() {
-  document.getElementById("homePage").style.display = "block"; // show homePage
-  document.querySelector(".home-container").style.display = "none"; // hide the landing container
+  alert("Password recovery coming soon..");
 }
