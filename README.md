@@ -24,8 +24,8 @@ The signup page includes client-side validation to ensure that users enter a use
 - **Responsive Design:** The layout adapts fluidly to different screen sizes<br />
 - **Subtle Animations:** Gentle animations are integrated to provide visual feedback and enhance interactivity.<br />
   These may include:<br />
-- Smooth transitions when switching between login and signup forms.<br />
-- Subtle hover effects on buttons and input fields.
+  - Smooth transitions when switching between login and signup forms.<br />
+  - Subtle hover effects on buttons and input fields.
 
 ## Documentation:
 
