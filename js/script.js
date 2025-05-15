@@ -10,6 +10,7 @@ function showSignup() {
   document.getElementById("signupPage").style.display = "block";
 }
 
+// Hardcoded credentials for demo purposes
 function validateLogin() {
   let username = document.getElementById("username").value;
   let password = document.getElementById("password").value;
